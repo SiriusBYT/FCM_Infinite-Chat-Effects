@@ -1,12 +1,3 @@
-# This is a modified version of the Replugged Template.
-See the [theme development guide](https://guide.replugged.dev/docs/themes/getting-started) for more information on how to get it to produce a valid ASAR file.
+This FlashCore module (which actually isn't a true module as it edits a small part of Flashcord and doesn't use any @containers) is extremely simple, it adds a very small piece of code which forces every message to be able to contain a chat effect.
 
-## Welcome to the Flashcord Module Template!
-This is a simple modification in which the main.css file has been edited to have most FlashCore modules ready to be edited.
-
-Please make sure that the ID of your module contains "FCM" so that it can be distinguised from regular themes.
-
-An image is required to be uploaded for the [Flashcord Module Store](https://sirio-network.com/flashcord/store), name it something simple like "banner" or "store image".
-
-#### ⚠️ Please refrain from sending Flashcord Modules for approval on the Replugged store, it's best not flooding their theme page with Flashcord.
-Also while I won't stop you for making Vencord or BetterDiscord versions, I will not link them on the Module Store.
+By default, ever since Flashcord Beta, it only allows the last 8 messages to be able to have a working chat effect, this removes the limit entirely, at the cost of obviously, probably and maybe severe performance issues.
