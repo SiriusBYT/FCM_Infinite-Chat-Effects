@@ -1,0 +1,19 @@
+{
+  "id": "dev.AuthorNameHere.FCM-ModuleNameHere",
+  "name": "Flashcord Module Template",
+  "description": "This theme is a Flashcord Module, modify each individual part of Flashcord without having to worry about updating your modification every time Flashcord updates!",
+  "author": {
+    "name": "replugged",
+    "discordID": "1000992611840049192",
+    "github": "replugged-org"
+  },
+  "version": "1.0.0",
+  "updater": {
+    "type": "github",
+    "id": "SiriusBYT/Flashcord-Module-Template"
+  },
+  "license": "MIT",
+  "source": "https://github.com/replugged-org/theme-template",
+  "type": "replugged-theme",
+  "main": "src/main.css"
+}
