@@ -1,7 +1,7 @@
 {
   "name": "FCM: Infitnite Chat Effects",
   "version": "1.0.0",
-  "description": "Flashcord Beta Module that adds a very small bit of code that forces all messages to be eligeable to have a chat effect ",
+  "description": "Flashcord Beta Module that adds a very small bit of code that forces all messages to be able to have a chat effect.",
   "engines": {
     "node": ">=18.0.0",
     "pnpm": ">=8.0.0"
