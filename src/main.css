@@ -1,4 +1,0 @@
-[class^="messageListItem-"]:has([href^="http://flashcord/"]) {
-    container-name: var(--Flashcord-Chat_Effects, FC-ChatEffects_Animated);
-    container-type: inline-size;
-}
