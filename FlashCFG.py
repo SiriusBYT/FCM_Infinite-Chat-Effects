@@ -30,8 +30,8 @@ Embed_Color = "#FF69FF"
 
 Store_Page_Name = "infinite_chat_effects.html" # NO capitals! Underscores only! CANNOT HAVE "-files" AT THE END!
 Folder_Name = "infinite_chat_effects-files" # NO capitals! Underscores only! Must have "-files" at the end!
-Embed_FileName = "embed-banner.png" # Notice: GIFs work!
-Store_Embed_FileName = "embed-banner.png" # I would still suggest against it due to AuraCloud-E2A's limited space.
+Embed_FileName = "embed-banner.jpg" # Notice: GIFs work!
+Store_Embed_FileName = "embed-banner.jpg" # I would still suggest against it due to AuraCloud-E2A's limited space.
 
 Long_Description = "<p>Since Flashcord Beta, only the last 8 messages can have chat effects, meaning if you scroll up to older messages, you may encounter a wild chat effect link that doesn't do anything.</p> \
 <p>This official Flashcord Module will make it so that every message can have one, note that this will cause obvious performance issues.</p>"
