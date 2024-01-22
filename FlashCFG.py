@@ -14,8 +14,8 @@ AllowAPI = True # Allows the script to connect to the SGN servers in order to ma
 
 
 Name = "Infinite Chat Effects"
-Short_Description = "This store page was created using the Flashcord Store Quick Config Python Script!"
-Version = "v1.2.0"
+Short_Description = "Makes every single message able to have a chat effect instead of the last 8 messages sent."
+Version = "v1.0.1"
 License_Year = "2024"
 License = "Unlicense"
 
