@@ -1,0 +1,67 @@
+<!-- 
+    Welcome to your own Flashcord Store Page!
+    You have the full creative liberty to modify this page if you don't like the stock layout.
+    You aren't allowed to fetch for external ressources. Everything must be inside your [FOLDER_NAME] folder.
+    NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
+    You may use the Python Script to quickly get started, and then you may manually adjust your page.
+    Note: Modifying embed.html is generally not advised but you can do it.
+    
+    // Flashcord Store Metadata
+
+    [NAME]
+    [SHORT_DESC]
+    [VERSION]
+    [LICENSE]
+    [LICENSE_YEAR]
+
+    [GITHUB_PROFILE]
+    [GITHUB_REPO]
+    [GITHUB_CONTRIBUTORS]
+
+    [DISCORD_LINK]
+    [THEME]
+    [EMBED_COLOR]
+
+    [STORE_PAGE_FILENAME]
+    [FOLDER_NAME]
+    [EMBED_FILENAME]
+    [STORE_EMBED_FILENAME]
+ -->
+
+ <!doctype html>
+ <html class="SNDL-Dark">
+     <head>
+         <title>[NAME] - Flashcord Store</title>
+         <!-- SNWE SEO -->
+         <meta name="description" content="[SHORT_DESC]">
+         <meta name="author" content="[GITHUB_PROFILE]">
+         <!-- SNWE External-->
+         <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-App_Base.css">
+         <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-Flashcord.css">
+         <link rel="stylesheet" href="embed.css">
+         <link rel="icon" type="image/x-icon" href="https://sirio-network.com/sbin/SGN-SNDL_FULL.png">
+         <!-- SNWE Misc-->
+         <meta charset="utf-8">
+         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+     </head>
+     <body>
+ 
+         <div class="Flashcord-Module">
+             <img class="Flashcord-Module_Banner" src="[EMBED_FILENAME]"></img>
+             <div class="Flashcord-Module_Info">
+                 <div class="SNDL-Quick_FlexGrid" style="justify-content: left;">
+                     <a target="_blank" href="../[STORE_PAGE_FILENAME]"><h1>[NAME]</h1></a>
+                     <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]"><h1>💿</h1></a>
+                 </div>
+                 <div class="SNDL-Quick_FlexGrid" style="justify-content: left;">
+                     <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]"><h2>[GITHUB_PROFILE]</h2></a>
+                     <a target="_blank" href="[DISCORD_LINK]"><h2>💬</h2></a>
+                 </div>
+                 <h5 style="margin-bottom: 8px;">Contributers: [GITHUB_CONTRIBUTORS]</h5>
+                 <h3 class="Flashcord-Module_Version">Version: [VERSION]</h3>
+                 <p>[SHORT_DESC]</p>
+                 <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[GITHUB_PROFILE] © [LICENSE_YEAR] - [NAME] | [LICENSE]</p></a>
+             </div>
+         </div>
+     </body>
+ </html>
