@@ -1,4 +1,4 @@
-import api
+from flashapi import * 
 """
 This tool lets you quickly configure your page in a hurry.
 Read https://github.com/SiriusBYT/Flashcord/wiki/The-Flashcord-Store-Template for how this file works.
@@ -56,7 +56,7 @@ def GetEmbedCode():
             API_Request = "GET/" + "THEMES/" + GitHub_Profile.upper()
         else:
             API_Request = "GET/" + "MODULES/" + GitHub_Profile.upper()
-        RequestResults = api.FlashClient_API_Request(API_Request)
+        RequestResults = FlashClient_API_Request(API_Request)
         return RequestResults
     API_Folders = CallAPI()
     #print("TYPE:",type(API_Folders))
@@ -156,7 +156,7 @@ def HTMLConfigurator(Step):
                     HTMLArray[line] = HTMLArray[line].replace("[DISCORD_LINK]", Discord)
                     HTMLArray[line] = HTMLArray[line].replace("[THEME]", SNDL_Theme)
                     HTMLArray[line] = HTMLArray[line].replace("[EMBED_COLOR]", Embed_Color)
-                    HTMLArray[line] = HTMLArray[line].replace("[STORE_PAGE_NAME]", Store_Page_Name)
+                    HTMLArray[line] = HTMLArray[line].replace("[STORE_PAGE_FILENAME]", Store_Page_Name)
                     HTMLArray[line] = HTMLArray[line].replace("[FOLDER_NAME]", Folder_Name)
                     HTMLArray[line] = HTMLArray[line].replace("[EMBED_FILENAME]", Embed_FileName)
                     HTMLArray[line] = HTMLArray[line].replace("[STORE_EMBED_FILENAME]", Store_Embed_FileName)
