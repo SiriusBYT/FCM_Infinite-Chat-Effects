@@ -1,34 +1,34 @@
 <!-- 
-    Welcome to your own Flashcord Store Page!
-    You have the full creative liberty to modify this page if you don't like the stock layout.
-    You aren't allowed to fetch for external ressources. Everything must be inside your [FOLDER_NAME] folder.
-    NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
-    You may use the Python Script to quickly get started, and then you may manually adjust your page.
+Welcome to your own Flashcord Store Page!
+You have the full creative liberty to modify this page if you don't like the stock layout.
+You aren't allowed to fetch for external ressources. Everything must be inside your [FOLDER_NAME] folder.
+NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
+You may use the Python Script to quickly get started, and then you may manually adjust your page.
 
-    // Flashcord Store Metadata
+// Flashcord Store Metadata
 
-    [NAME]
-    [SHORT_DESC]
-    [VERSION]
-    [LICENSE]
-    [LICENSE_YEAR]
+[NAME]
+[SHORT_DESC]
+[VERSION]
+[LICENSE]
+[LICENSE_YEAR]
 
-    [GITHUB_PROFILE]
-    [GITHUB_REPO]
-    [GITHUB_CONTRIBUTORS]
+[GITHUB_PROFILE]
+[GITHUB_REPO]
+[GITHUB_CONTRIBUTORS]
 
-    [DISCORD_LINK]
-    [THEME]
-    [EMBED_COLOR]
+[DISCORD_LINK]
+[THEME]
+[EMBED_COLOR]
 
-    [STORE_PAGE_FILENAME]
-    [FOLDER_NAME]
-    [EMBED_FILENAME]
-    [STORE_EMBED_FILENAME]
-    [STORE_USER_FOLDER]
+[STORE_PAGE_FILENAME]
+[FOLDER_NAME]
+[EMBED_FILENAME]
+[STORE_EMBED_FILENAME]
+[STORE_USER_FOLDER]
 
-    [LONG_DESC]
- -->
+[LONG_DESC]
+-->
 
 <!doctype html>
 <html class="SNDL-[THEME]">
@@ -69,13 +69,13 @@
             <div class="Userspace">
                 <div class="Flashcord-StoreSpace">
                     <div class="Flashcord-Store_Description">
-                        <img class="Flashcord-Store_Banner" src="[FOLDER_NAME]/[STORE_EMBED_FILENAME]"></img>
+                        <img class="Flashcord-Store_Banner" src="[STORE_BANNER]"></img>
                         <p>[LONG_DESC]</p>
                     </div>
                     <div class="Flashcord-Store_Header">
                         <div class="Flashcord-Module_Favicons">
                             <h1>[NAME]</h1>
-                            <a target="_blank" class="Flashcord-Module_Favicon" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]"><h1>💿</h1></a>
+                            <a target="_blank" class="Flashcord-Module_Favicon" href="[GITHUB_REPO]"><h1>💿</h1></a>
                         </div>
                         <div class="Flashcord-Module_Favicons">
                             <a target="_blank" href="https://github.com/[GITHUB_PROFILE]"><h2>[GITHUB_PROFILE]</h2></a>
@@ -91,7 +91,7 @@
                         <h4>🔌 Replugged</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/module.css")</p>
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css")</p>
                         </div>
                         <p>And simply click the "Apply Changes" button.</p>
 
@@ -106,19 +106,19 @@
                         <h4>✨ Vencord</h4>
                         <p>Add the following url to your Local Theme's box.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/module.css</p>
+                            <p>https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css</p>
                         </div>
 
                         <h4>🩹 BetterDiscord</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/module.css")</p>
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css")</p>
                         </div>
                         <p>And simply click the Floppy Disk 💾 icon.</p>
 
                         <p class="SNDL-LineSpacer_H"></p>
 
-                        <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[GITHUB_PROFILE] © [LICENSE_YEAR] - [NAME] | [LICENSE]</p></a>
+                        <a target="_blank" href="[GITHUB_REPO]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[GITHUB_PROFILE] © [LICENSE_YEAR] - [NAME] | [LICENSE]</p></a>
                     </div>
                 </div>
                         
@@ -134,7 +134,7 @@
                 <p class="SNDL-LineSpacer_H"></p>
 
                 <div class="SNDL-Copyright">
-                    <p>SiriusBYT © 2024 - Sirio Network Website | CC-BY-ND-NC 4.0</p>
+                    <p>SiriusBYT © 2023-2024 - Sirio Network Website | CC-BY-ND-NC 4.0</p>
                 </div>
             </div>
         </div>

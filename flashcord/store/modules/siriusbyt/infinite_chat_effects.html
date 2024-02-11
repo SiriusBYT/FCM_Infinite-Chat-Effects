@@ -1,46 +1,47 @@
 <!-- 
-    Welcome to your own Flashcord Store Page!
-    You have the full creative liberty to modify this page if you don't like the stock layout.
-    You aren't allowed to fetch for external ressources. Everything must be inside your infinite_chat_effects-files folder.
-    NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
-    You may use the Python Script to quickly get started, and then you may manually adjust your page.
+Welcome to your own Flashcord Store Page!
+You have the full creative liberty to modify this page if you don't like the stock layout.
+You aren't allowed to fetch for external ressources. Everything must be inside your infinite_chat_effects-files folder.
+NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
+You may use the Python Script to quickly get started, and then you may manually adjust your page.
 
-    // Flashcord Store Metadata
+// Flashcord Store Metadata
 
-    Infinite Chat Effects
-    Makes every single message able to have a chat effect instead of the last 8 messages sent.
-    v1.0.1
-    Unlicense
-    2024
+Infinite Chat Effects
+Every single message can have a Chat Effect now! (Default Flashcord Behavior only allows 8 last messages)
+v1.0.1
+Unlicense
+2023-2024
 
-    SiriusBYT
-    FCM_Extended-Chat-Effects
-    SiriusBYT
+SiriusBYT
+https://github.com/SiriusBYT/FCM_Infinite-Chat-Effects
+None
 
-    https://sirio-network.com/redirect/discord
-    Light
-    #FF69FF
+https://sirio-network.com/redirect/discord
+Dark
+#FF69FF
 
-    infinite_chat_effects.html
-    infinite_chat_effects-files
-    embed-banner.jpg
-    embed-banner.jpg
-    siriusbyt
+[STORE_PAGE_FILENAME]
+infinite_chat_effects-files
+embed-banner.jpg
+[STORE_EMBED_FILENAME]
+siriusbyt
 
-    <p>Since Flashcord Beta, only the last 8 messages can have chat effects, meaning if you scroll up to older messages, you may encounter a wild chat effect link that doesn't do anything.</p> <p>This official Flashcord Module will make it so that every message can have one, note that this will cause obvious performance issues.</p>
- -->
+<p>Since Flashcord Beta, only the last 8 messages can have chat effects, meaning if you scroll up to older messages, you may encounter a wild chat effect link that doesn't do anything.</p>
+<p>This official Flashcord Module will make it so that every message can have one, note that this will cause obvious performance issues.</p>
+-->
 
 <!doctype html>
-<html class="SNDL-Light">
+<html class="SNDL-Dark">
     <head>
         <title>Infinite Chat Effects - Flashcord Store</title>
         <!-- SNWE SEO -->
-        <meta name="description" content="Makes every single message able to have a chat effect instead of the last 8 messages sent.">
+        <meta name="description" content="Every single message can have a Chat Effect now! (Default Flashcord Behavior only allows 8 last messages)">
         <meta name="author" content="SiriusBYT">
         <!-- SNWE Embed -->
         <meta content="Infinite Chat Effects - Flashcord Store" property="og:title" />
-        <meta content="Makes every single message able to have a chat effect instead of the last 8 messages sent." property="og:description" />
-        <meta content="https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects.html" property="og:url" />
+        <meta content="Every single message can have a Chat Effect now! (Default Flashcord Behavior only allows 8 last messages)" property="og:description" />
+        <meta content="https://sirio-network.com/flashcord/store/modules/siriusbyt/[STORE_PAGE_FILENAME]" property="og:url" />
         <meta content="https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/embed-banner.jpg" property="og:image" />
         <meta content="#FF69FF" data-react-helmet="true" name="theme-color" />
         <meta name="twitter:card" content="summary_large_image">
@@ -70,20 +71,21 @@
                 <div class="Flashcord-StoreSpace">
                     <div class="Flashcord-Store_Description">
                         <img class="Flashcord-Store_Banner" src="infinite_chat_effects-files/embed-banner.jpg"></img>
-                        <p><p>Since Flashcord Beta, only the last 8 messages can have chat effects, meaning if you scroll up to older messages, you may encounter a wild chat effect link that doesn't do anything.</p> <p>This official Flashcord Module will make it so that every message can have one, note that this will cause obvious performance issues.</p></p>
+                        <p><p>Since Flashcord Beta, only the last 8 messages can have chat effects, meaning if you scroll up to older messages, you may encounter a wild chat effect link that doesn't do anything.</p>
+<p>This official Flashcord Module will make it so that every message can have one, note that this will cause obvious performance issues.</p></p>
                     </div>
                     <div class="Flashcord-Store_Header">
                         <div class="Flashcord-Module_Favicons">
                             <h1>Infinite Chat Effects</h1>
-                            <a target="_blank" class="Flashcord-Module_Favicon" href="https://github.com/SiriusBYT/FCM_Extended-Chat-Effects"><h1>💿</h1></a>
+                            <a target="_blank" class="Flashcord-Module_Favicon" href="https://github.com/SiriusBYT/FCM_Infinite-Chat-Effects"><h1>💿</h1></a>
                         </div>
                         <div class="Flashcord-Module_Favicons">
                             <a target="_blank" href="https://github.com/SiriusBYT"><h2>SiriusBYT</h2></a>
                             <a target="_blank" href="https://sirio-network.com/redirect/discord"><h2>💬</h2></a>
                         </div>
-                        <h5 style="margin-bottom: 8px;">Contributors: SiriusBYT</h5>
+                        <h5 style="margin-bottom: 8px;">Contributors: None</h5>
                         <h3 class="Flashcord-Module_Version">Version: v1.0.1</h3>
-                        <p>Makes every single message able to have a chat effect instead of the last 8 messages sent.</p>
+                        <p>Every single message can have a Chat Effect now! (Default Flashcord Behavior only allows 8 last messages)</p>
 
                         <p class="SNDL-LineSpacer_H"></p>
 
@@ -91,7 +93,7 @@
                         <h4>🔌 Replugged</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/module.css")</p>
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/main.css")</p>
                         </div>
                         <p>And simply click the "Apply Changes" button.</p>
 
@@ -106,19 +108,19 @@
                         <h4>✨ Vencord</h4>
                         <p>Add the following url to your Local Theme's box.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/module.css</p>
+                            <p>https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/main.css</p>
                         </div>
 
                         <h4>🩹 BetterDiscord</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
                         <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/module.css")</p>
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/siriusbyt/infinite_chat_effects-files/main.css")</p>
                         </div>
                         <p>And simply click the Floppy Disk 💾 icon.</p>
 
                         <p class="SNDL-LineSpacer_H"></p>
 
-                        <a target="_blank" href="https://github.com/SiriusBYT/FCM_Extended-Chat-Effects/blob/main/LICENSE.MD"><p class="SNDL-Copyright">SiriusBYT © 2024 - Infinite Chat Effects | Unlicense</p></a>
+                        <a target="_blank" href="https://github.com/SiriusBYT/FCM_Infinite-Chat-Effects/blob/main/LICENSE.MD"><p class="SNDL-Copyright">SiriusBYT © 2023-2024 - Infinite Chat Effects | Unlicense</p></a>
                     </div>
                 </div>
                         
@@ -135,7 +137,7 @@
                 <p class="SNDL-LineSpacer_H"></p>
 
                 <div class="SNDL-Copyright">
-                    <p>SiriusBYT © 2024 - Sirio Network Website | CC-BY-ND-NC 4.0</p>
+                    <p>SiriusBYT © 2023-2024 - Sirio Network Website | CC-BY-ND-NC 4.0</p>
                 </div>
             </div>
         </div>
