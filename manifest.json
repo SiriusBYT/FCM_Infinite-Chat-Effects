@@ -1,0 +1,28 @@
+{
+	"name": "Infinite Chat Effects",
+	"description": "Every single message can have a Chat Effect now! (Default Flashcord Behavior only allows 8 last messages)",
+	"version": "v1.0.2",
+	"license": "Unlicense",
+	"type": "flashcord-addon",
+	"source": "https://github.com/SiriusBYT/FCM_Infinite-Chat-Effects",
+	"flashcord": {
+        "general_information": {
+            "contributors": "None",
+            "discord_link": "https://sirio-network.com/redirect/discord",
+            "license_year": "2023-2024",
+            "sndl_theme": "Dark",
+            "embed_color": "#FF69FF",
+            "tags": [
+                "Flashcord Addon",
+                "Flashcord SID",
+                "Flashcord STB"
+            ]
+        },
+		"internal_structure": {
+            "internal_name": "infinite_chat_effects",
+            "image_store": "embed-banner.jpg",
+            "image_embed": "embed-banner.jpg",
+            "backup_files": false
+        }
+	}
+}

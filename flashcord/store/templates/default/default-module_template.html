@@ -1,60 +1,50 @@
 <!-- 
-Welcome to your own Flashcord Store Page!
-You have the full creative liberty to modify this page if you don't like the stock layout.
-You aren't allowed to fetch for external ressources. Everything must be inside your [FOLDER_NAME] folder.
-NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
-You may use the Python Script to quickly get started, and then you may manually adjust your page.
+    
+[Addon_Name]
+[Addon_DescriptionShort]
+[Addon_Version]
+[Addon_LicenseString]
 
-// Flashcord Store Metadata
+[Addon_Author]
+[Addon_Repository]
+[Addon_Contributors]
 
-[NAME]
-[SHORT_DESC]
-[VERSION]
-[LICENSE]
-[LICENSE_YEAR]
+[Addon_Discord]
+[Addon_Theme]
+[Addon_Color]
 
-[GITHUB_PROFILE]
-[GITHUB_REPO]
-[GITHUB_CONTRIBUTORS]
+[Addon_Folder]
+[Addon_Folder]
+[Addon_ImageEmbed]
 
-[DISCORD_LINK]
-[THEME]
-[EMBED_COLOR]
-
-[STORE_PAGE_FILENAME]
-[FOLDER_NAME]
-[EMBED_FILENAME]
-[STORE_EMBED_FILENAME]
-[STORE_USER_FOLDER]
-
-[LONG_DESC]
 -->
 
 <!doctype html>
-<html class="SNDL-[THEME]">
+<html class="SNDL-[Addon_Theme]" lang="en-GB">
     <head>
-        <title>[NAME] - Flashcord Store</title>
+        <title>[Addon_Name] - Flashcord Store</title>
         <!-- SNWE SEO -->
-        <meta name="description" content="[SHORT_DESC]">
-        <meta name="author" content="[GITHUB_PROFILE]">
+        <meta name="description" content="[Addon_DescriptionShort]">
+        <meta name="author" content="[Addon_Author]">
         <!-- SNWE Embed -->
-        <meta content="[NAME] - Flashcord Store" property="og:title" />
-        <meta content="[SHORT_DESC]" property="og:description" />
-        <meta content="https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[STORE_PAGE_FILENAME]" property="og:url" />
-        <meta content="https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/[EMBED_FILENAME]" property="og:image" />
-        <meta content="[EMBED_COLOR]" data-react-helmet="true" name="theme-color" />
+        <meta content="[Addon_Name] - Flashcord Store" property="og:title" />
+        <meta content="[Addon_DescriptionShort]" property="og:description" />
+        <meta content="https://sirio-network.com/flashcord/store/modules/[Username]/[Addon_Folder]" property="og:url" />
+        <meta content="https://sirio-network.com/flashcord/store/modules/[Username]/[Addon_Folder]/[Addon_ImageEmbed]" property="og:image" />
+        <meta content="[Addon_Color]" data-react-helmet="true" name="theme-color" />
         <meta name="twitter:card" content="summary_large_image">
         <!-- SNWE External-->
         <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-App_Base.css">
         <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-Flashcord.css">
-        <link rel="stylesheet" href="[FOLDER_NAME]/Module-Store.css">
+        <link rel="stylesheet" href="[Addon_Folder]/Module-Store.css">
+        <script src="https://sirio-network.com/bin/scripts/Flashcord_API_JS_Client.js"></script>
         <link rel="icon" type="image/x-icon" href="https://sirio-network.com/sbin/SGN-SNDL_FULL.png">
         <!-- SNWE Misc-->
         <meta charset="utf-8">
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
     </head>
 
-    <body>
+    <body onload="Flashcord_API_Client('ADD_STAT/VIEWS/[Addon_Folder]')">
         <div class="FakeRoot">
             <nav>
                 <img class="SNDL-Nav_Banner" src="https://sirio-network.com/sbin/Flashcord/SNDL-Flashcord.png"></img>
@@ -69,29 +59,29 @@ You may use the Python Script to quickly get started, and then you may manually 
             <div class="Userspace">
                 <div class="Flashcord-StoreSpace">
                     <div class="Flashcord-Store_Description">
-                        <img class="Flashcord-Store_Banner" src="[STORE_BANNER]"></img>
-                        <p>[LONG_DESC]</p>
+                        <img class="Flashcord-Store_Banner" src="[Addon_Folder]-files/[Addon_ImageStore]"></img>
+                        <p>[Addon_DescriptionLong]</p>
                     </div>
                     <div class="Flashcord-Store_Header">
                         <div class="Flashcord-Module_Favicons">
-                            <h1>[NAME]</h1>
-                            <a target="_blank" class="Flashcord-Module_Favicon" href="[GITHUB_REPO]"><h1>💿</h1></a>
+                            <h1>[Addon_Name]</h1>
+                            <a target="_blank" class="Flashcord-Module_Favicon" href="[Addon_Repository]"><h1>💿</h1></a>
                         </div>
                         <div class="Flashcord-Module_Favicons">
-                            <a target="_blank" href="https://github.com/[GITHUB_PROFILE]"><h2>[GITHUB_PROFILE]</h2></a>
-                            <a target="_blank" href="[DISCORD_LINK]"><h2>💬</h2></a>
+                            <a target="_blank" href="https://github.com/[Addon_Author]"><h2>[Addon_Author]</h2></a>
+                            <a target="_blank" href="[Addon_Discord]"><h2>💬</h2></a>
                         </div>
-                        <h5 style="margin-bottom: 8px;">Contributors: [GITHUB_CONTRIBUTORS]</h5>
-                        <h3 class="Flashcord-Module_Version">Version: [VERSION]</h3>
-                        <p>[SHORT_DESC]</p>
+                        <h5 style="margin-bottom: 8px;">Contributors: [Addon_Contributors]</h5>
+                        <h3 class="Flashcord-Module_Version">Version: [Addon_Version]</h3>
+                        <p>[Addon_DescriptionShort]</p>
 
                         <p class="SNDL-LineSpacer_H"></p>
 
                         <h3>How to install this module:</h3>
                         <h4>🔌 Replugged</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
-                        <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css")</p>
+                        <div class="SNDL-CodeBlock" onmouseover="Flashcord_API_Client('ADD_STAT/INSTALLS/[Addon_Folder]')">
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[Username]/[Addon_Folder]/main.css")</p>
                         </div>
                         <p>And simply click the "Apply Changes" button.</p>
 
@@ -105,31 +95,31 @@ You may use the Python Script to quickly get started, and then you may manually 
                         </div>
                         <h4>✨ Vencord</h4>
                         <p>Add the following url to your Local Theme's box.</p>
-                        <div class="SNDL-CodeBlock">
-                            <p>https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css</p>
+                        <div class="SNDL-CodeBlock" onmouseover="Flashcord_API_Client('ADD_STAT/INSTALLS/[Addon_Folder]')">
+                            <p>https://sirio-network.com/flashcord/store/modules/[Username]/[Addon_Folder]/main.css</p>
                         </div>
 
                         <h4>🩹 BetterDiscord</h4>
                         <p>Add the following line to your QuickCSS, below Flashcord's Import line.</p>
-                        <div class="SNDL-CodeBlock">
-                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[STORE_USER_FOLDER]/[FOLDER_NAME]/main.css")</p>
+                        <div class="SNDL-CodeBlock" onmouseover="Flashcord_API_Client('ADD_STAT/INSTALLS/[Addon_Folder]')">
+                            <p>@import url("https://sirio-network.com/flashcord/store/modules/[Username]/[Addon_Folder]/main.css")</p>
                         </div>
                         <p>And simply click the Floppy Disk 💾 icon.</p>
 
                         <p class="SNDL-LineSpacer_H"></p>
 
-                        <a target="_blank" href="[GITHUB_REPO]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[GITHUB_PROFILE] © [LICENSE_YEAR] - [NAME] | [LICENSE]</p></a>
+                        <a target="_blank" href="[Addon_Repository]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[Addon_LicenseString]</p></a>
                     </div>
                 </div>
                         
                 <!-- Delete this entire section if this is the first time you're posting to the Flashcord Store-->
                 <p class="SNDL-LineSpacer_H"></p>
-                <h1 style="text-align: center;">More Flashcord Modules by [GITHUB_PROFILE]</h1>
+                <h1 style="text-align: center;">More Flashcord Modules by [Addon_Author]</h1>
                 <p class="SNDL-LineSpacer_H"></p>
                 
                 <!-- Insert the DIRECT URL of your other modules.-->
                 <div class="SNDL-Quick_FlexGrid SNDL-Contain_Light SNDL-Auto_Flex">
-                    [FLASHSTORE_API-EMBEDS]
+                    [Addon_Other]
                 </div>
                 <p class="SNDL-LineSpacer_H"></p>
 

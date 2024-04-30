@@ -1,5 +1,5 @@
-:root { --Flashcord-Store_InfiniteChatEffects: "✅ Present (v1.0.1)"; }
+:root { --Flashcord-Store_InfiniteChatEffects: "✅ Present (v1.0.2)"; }
 [class^="messageListItem_"]:has([href^="http://flashcord/"], [class="replugged-greentext"]) {
-  container-name: var(--Flashcord-Chat_Effects, FC-ChatEffects_Animated);
+  container-name: var(--Flashcord-Module_Effects, FCM-Effects_Animated);
   container-type: inline-size;
 }

@@ -1,40 +1,31 @@
 <!-- 
-    Welcome to your own Flashcord Store Page!
-    You have the full creative liberty to modify this page if you don't like the stock layout.
-    You aren't allowed to fetch for external ressources. Everything must be inside your [FOLDER_NAME] folder.
-    NO Javascript or anything of that matter is allowed, the SNWE website must be in pure HTML and CSS.
-    You may use the Python Script to quickly get started, and then you may manually adjust your page.
-    Note: Modifying embed.html is generally not advised but you can do it.
-    
-    // Flashcord Store Metadata
 
-    [NAME]
-    [SHORT_DESC]
-    [VERSION]
-    [LICENSE]
-    [LICENSE_YEAR]
+[Addon_Name]
+[Addon_DescriptionShort]
+[Addon_Version]
+[Addon_LicenseString]
 
-    [GITHUB_PROFILE]
-    [GITHUB_REPO]
-    [GITHUB_CONTRIBUTORS]
+[Addon_Author]
+[Addon_Repository]
+[Addon_Contributors]
 
-    [DISCORD_LINK]
-    [THEME]
-    [EMBED_COLOR]
+[Addon_Discord]
+[Addon_Theme]
+[Addon_Color]
 
-    [STORE_PAGE_FILENAME]
-    [FOLDER_NAME]
-    [EMBED_FILENAME]
-    [STORE_EMBED_FILENAME]
+[Addon_Folder]
+[Addon_Folder]
+[Addon_ImageEmbed]
+
  -->
 
  <!doctype html>
- <html class="SNDL-Dark">
+ <html class="SNDL-Dark" lang="en-GB">
      <head>
-         <title>[NAME] - Flashcord Store</title>
+         <title>[Addon_Name] - Flashcord Store</title>
          <!-- SNWE SEO -->
-         <meta name="description" content="[SHORT_DESC]">
-         <meta name="author" content="[GITHUB_PROFILE]">
+         <meta name="description" content="[Addon_DescriptionShort]">
+         <meta name="author" content="[Addon_Author]">
          <!-- SNWE External-->
          <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-App_Base.css">
          <link rel="stylesheet" href="https://sirio-network.com/bin/SNDL-Flashcord.css">
@@ -46,21 +37,21 @@
      </head>
      <body>
  
-         <div class="Flashcord-Module">
-             <img class="Flashcord-Module_Banner" src="[EMBED_FILENAME]"></img>
+         <div class="Flashcord-Module" tags="[Addon_TagsString]">
+             <img class="Flashcord-Module_Banner" src="[Addon_ImageEmbed]"></img>
              <div class="Flashcord-Module_Info">
                  <div class="SNDL-Quick_FlexGrid" style="justify-content: left;">
-                     <a target="_blank" href="../[STORE_PAGE_FILENAME]"><h1>[NAME]</h1></a>
-                     <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]"><h1>💿</h1></a>
+                     <a target="_blank" href="../[Addon_Folder].html"><h1>[Addon_Name]</h1></a>
+                     <a target="_blank" href="[Addon_Repository]"><h1>💿</h1></a>
                  </div>
                  <div class="SNDL-Quick_FlexGrid" style="justify-content: left;">
-                     <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]"><h2>[GITHUB_PROFILE]</h2></a>
-                     <a target="_blank" href="[DISCORD_LINK]"><h2>💬</h2></a>
+                     <a target="_blank" href="https://github.com/[Addon_Author]"><h2>[Addon_Author]</h2></a>
+                     <a target="_blank" href="[Addon_Discord]"><h2>💬</h2></a>
                  </div>
-                 <h5 style="margin-bottom: 8px;">Contributers: [GITHUB_CONTRIBUTORS]</h5>
-                 <h3 class="Flashcord-Module_Version">Version: [VERSION]</h3>
-                 <p>[SHORT_DESC]</p>
-                 <a target="_blank" href="https://github.com/[GITHUB_PROFILE]/[GITHUB_REPO]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[GITHUB_PROFILE] © [LICENSE_YEAR] - [NAME] | [LICENSE]</p></a>
+                 <h5 style="margin-bottom: 8px;">Contributors: [Addon_Contributors]</h5>
+                 <h3 class="Flashcord-Module_Version">Version: [Addon_Version]</h3>
+                 <p>[Addon_DescriptionShort]</p>
+                 <a target="_blank" href="[Addon_Repository]/blob/main/LICENSE.MD"><p class="SNDL-Copyright">[Addon_LicenseString]</p></a>
              </div>
          </div>
      </body>
